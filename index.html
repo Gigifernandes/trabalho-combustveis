@@ -1,0 +1,39 @@
+<!--Vamos criar um projeto na qual o suuário irá digitar
+o preço do Etanol e o preço da Gasolina. Se o preço do
+etanol for 70% ou menos do que o da gasolina, será mais
+vantajoso abastecer com ele. Em outros casos, a gasolina
+será a melhor opção. Para incrementar o nosso projeto,
+vamos criar um design com três imagens para representar
+os tipos de combustíveis: Uma imagem para neutro, outra
+para etanol e outra para gasolina. A imagem será alterar,
+conforme a vantagem do combustível a abastecer.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Combustiveis</title>
+</head>
+<body>
+<div class="container">
+    <form action="" id="formulario">
+       
+       
+        <label for="combustivel">COMBUSTÍVEL:</label>
+ 
+        <input type="number" name="etanol" id="etanol" placeholder="Etanol" step="0.01">
+        <!--Permite que o usuário insira valores com duas casas decimais, comum para preços-->
+ 
+        <input type="number" name="gasolina" id="gasolina" placeholder="Gasolina" step="0.01">
+ 
+        <input type="button" value="CALCULAR" onclick="calcular()">
+        <input type="reset" value="LIMPAR" onclick="limpar()">
+    </form>
+ 
+    <img src="imagens/tanque.png" alt="tanque-combustivel" class="img-tanque" id="status">
+    <p id="mensagem">Resultado: </p> <!--Para mostrar o valor calculado na tela-->
+</div>  
+</body>
+</html>
